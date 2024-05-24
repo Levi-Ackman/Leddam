@@ -1,0 +1,49 @@
+Args in experiment:
+Namespace(batch_size=128, c_out=7, checkpoints='./checkpoints', d_model=256, data='ETTh2', data_path='ETTh2.csv', dec_in=7, des='Exp', devices='0,1,2,3', dropout=0.0, enc_in=7, features='M', freq='h', gpu=0, is_training=1, itr=1, kernel_size=25, label_len=48, learning_rate=0.0001, loss='mse', lradj='constant', model='Leddam', model_id='ETTh2_96_192', n_layers=1, num_workers=0, patience=6, pe_type='no', pred_len=192, revin=True, root_path='dataset/ETT-small/', seq_len=96, target='OT', task_name='long_term_forecast', train_epochs=100, use_amp=True, use_gpu=True, use_multi_gpu=False)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh2_pl192_n_layers_1_d_model_256_dropout_0.0_pe_type_no_bs_128_lr_0.0001>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8353
+val 2689
+test 2689
+Epoch: 1 cost time: 5.397770643234253
+Epoch: 1, Steps: 65 | Train Loss: 0.558  vali_loss: 0.275   test_loss: 0.378 
+Validation loss decreased (inf --> 0.275159).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 2 cost time: 2.63989520072937
+Epoch: 2, Steps: 65 | Train Loss: 0.532  vali_loss: 0.275   test_loss: 0.371 
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 0.0001
+Epoch: 3 cost time: 3.047858715057373
+Epoch: 3, Steps: 65 | Train Loss: 0.514  vali_loss: 0.274   test_loss: 0.367 
+Validation loss decreased (0.275159 --> 0.273626).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 4 cost time: 2.6766393184661865
+Epoch: 4, Steps: 65 | Train Loss: 0.494  vali_loss: 0.279   test_loss: 0.365 
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 0.0001
+Epoch: 5 cost time: 2.805041790008545
+Epoch: 5, Steps: 65 | Train Loss: 0.479  vali_loss: 0.279   test_loss: 0.365 
+EarlyStopping counter: 2 out of 6
+Updating learning rate to 0.0001
+Epoch: 6 cost time: 2.589249610900879
+Epoch: 6, Steps: 65 | Train Loss: 0.466  vali_loss: 0.284   test_loss: 0.367 
+EarlyStopping counter: 3 out of 6
+Updating learning rate to 0.0001
+Epoch: 7 cost time: 2.7381834983825684
+Epoch: 7, Steps: 65 | Train Loss: 0.453  vali_loss: 0.286   test_loss: 0.370 
+EarlyStopping counter: 4 out of 6
+Updating learning rate to 0.0001
+Epoch: 8 cost time: 2.6579132080078125
+Epoch: 8, Steps: 65 | Train Loss: 0.442  vali_loss: 0.284   test_loss: 0.366 
+EarlyStopping counter: 5 out of 6
+Updating learning rate to 0.0001
+Epoch: 9 cost time: 2.3927559852600098
+Epoch: 9, Steps: 65 | Train Loss: 0.432  vali_loss: 0.284   test_loss: 0.369 
+EarlyStopping counter: 6 out of 6
+Early stopping
+>>>>>>>testing : ETTh2_pl192_n_layers_1_d_model_256_dropout_0.0_pe_type_no_bs_128_lr_0.0001<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2689
+loading model
+Model weights deleted.
+test shape: (2689, 192, 7) (2689, 192, 7)
+mse:  0.367  mae:  0.389

@@ -1,0 +1,121 @@
+Args in experiment:
+Namespace(batch_size=128, c_out=137, checkpoints='./checkpoints', d_model=512, data='Solar', data_path='solar_AL.txt', dec_in=137, des='Exp', devices='0,1,2,3', dropout=0.5, enc_in=137, features='M', freq='h', gpu=0, is_training=1, itr=1, kernel_size=25, label_len=48, learning_rate=0.0005, loss='mse', lradj='constant', model='Leddam', model_id='solar_96_192', n_layers=3, num_workers=0, patience=6, pe_type='no', pred_len=192, revin=True, root_path='dataset/Solar/', seq_len=96, target='OT', task_name='long_term_forecast', train_epochs=100, use_amp=True, use_gpu=True, use_multi_gpu=False)
+Use GPU: cuda:0
+>>>>>>>start training : solar_AL_pl192_n_layers_3_d_model_512_dropout_0.5_pe_type_no_bs_128_lr_0.0005>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 36505
+val 5065
+test 10321
+Epoch: 1 cost time: 108.72240734100342
+Epoch: 1, Steps: 285 | Train Loss: 0.278  vali_loss: 0.196   test_loss: 0.284 
+Validation loss decreased (inf --> 0.195893).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 2 cost time: 103.236172914505
+Epoch: 2, Steps: 285 | Train Loss: 0.231  vali_loss: 0.181   test_loss: 0.255 
+Validation loss decreased (0.195893 --> 0.180853).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 3 cost time: 104.15436863899231
+Epoch: 3, Steps: 285 | Train Loss: 0.219  vali_loss: 0.179   test_loss: 0.245 
+Validation loss decreased (0.180853 --> 0.178737).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 4 cost time: 103.7504334449768
+Epoch: 4, Steps: 285 | Train Loss: 0.215  vali_loss: 0.180   test_loss: 0.246 
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 0.0005
+Epoch: 5 cost time: 103.5404200553894
+Epoch: 5, Steps: 285 | Train Loss: 0.211  vali_loss: 0.175   test_loss: 0.243 
+Validation loss decreased (0.178737 --> 0.175365).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 6 cost time: 100.35730957984924
+Epoch: 6, Steps: 285 | Train Loss: 0.208  vali_loss: 0.173   test_loss: 0.237 
+Validation loss decreased (0.175365 --> 0.173393).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 7 cost time: 100.70400643348694
+Epoch: 7, Steps: 285 | Train Loss: 0.205  vali_loss: 0.173   test_loss: 0.242 
+Validation loss decreased (0.173393 --> 0.173142).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 8 cost time: 98.92695212364197
+Epoch: 8, Steps: 285 | Train Loss: 0.204  vali_loss: 0.179   test_loss: 0.230 
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 0.0005
+Epoch: 9 cost time: 98.57281923294067
+Epoch: 9, Steps: 285 | Train Loss: 0.203  vali_loss: 0.178   test_loss: 0.231 
+EarlyStopping counter: 2 out of 6
+Updating learning rate to 0.0005
+Epoch: 10 cost time: 98.56564521789551
+Epoch: 10, Steps: 285 | Train Loss: 0.201  vali_loss: 0.176   test_loss: 0.233 
+EarlyStopping counter: 3 out of 6
+Updating learning rate to 0.0005
+Epoch: 11 cost time: 98.630704164505
+Epoch: 11, Steps: 285 | Train Loss: 0.200  vali_loss: 0.175   test_loss: 0.229 
+EarlyStopping counter: 4 out of 6
+Updating learning rate to 0.0005
+Epoch: 12 cost time: 99.03940343856812
+Epoch: 12, Steps: 285 | Train Loss: 0.198  vali_loss: 0.173   test_loss: 0.224 
+Validation loss decreased (0.173142 --> 0.172775).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 13 cost time: 99.12189292907715
+Epoch: 13, Steps: 285 | Train Loss: 0.197  vali_loss: 0.174   test_loss: 0.234 
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 0.0005
+Epoch: 14 cost time: 100.18066096305847
+Epoch: 14, Steps: 285 | Train Loss: 0.197  vali_loss: 0.175   test_loss: 0.228 
+EarlyStopping counter: 2 out of 6
+Updating learning rate to 0.0005
+Epoch: 15 cost time: 99.92891240119934
+Epoch: 15, Steps: 285 | Train Loss: 0.194  vali_loss: 0.176   test_loss: 0.239 
+EarlyStopping counter: 3 out of 6
+Updating learning rate to 0.0005
+Epoch: 16 cost time: 100.41629528999329
+Epoch: 16, Steps: 285 | Train Loss: 0.195  vali_loss: 0.172   test_loss: 0.231 
+Validation loss decreased (0.172775 --> 0.172445).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 17 cost time: 99.73763370513916
+Epoch: 17, Steps: 285 | Train Loss: 0.192  vali_loss: 0.175   test_loss: 0.226 
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 0.0005
+Epoch: 18 cost time: 98.62850689888
+Epoch: 18, Steps: 285 | Train Loss: 0.191  vali_loss: 0.174   test_loss: 0.221 
+EarlyStopping counter: 2 out of 6
+Updating learning rate to 0.0005
+Epoch: 19 cost time: 100.37271547317505
+Epoch: 19, Steps: 285 | Train Loss: 0.190  vali_loss: 0.175   test_loss: 0.234 
+EarlyStopping counter: 3 out of 6
+Updating learning rate to 0.0005
+Epoch: 20 cost time: 99.84766101837158
+Epoch: 20, Steps: 285 | Train Loss: 0.189  vali_loss: 0.174   test_loss: 0.230 
+EarlyStopping counter: 4 out of 6
+Updating learning rate to 0.0005
+Epoch: 21 cost time: 99.49024724960327
+Epoch: 21, Steps: 285 | Train Loss: 0.189  vali_loss: 0.169   test_loss: 0.231 
+Validation loss decreased (0.172445 --> 0.169062).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 22 cost time: 100.6317789554596
+Epoch: 22, Steps: 285 | Train Loss: 0.187  vali_loss: 0.174   test_loss: 0.226 
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 0.0005
+Epoch: 23 cost time: 98.99037432670593
+Epoch: 23, Steps: 285 | Train Loss: 0.186  vali_loss: 0.171   test_loss: 0.228 
+EarlyStopping counter: 2 out of 6
+Updating learning rate to 0.0005
+Epoch: 24 cost time: 99.06082558631897
+Epoch: 24, Steps: 285 | Train Loss: 0.184  vali_loss: 0.175   test_loss: 0.229 
+EarlyStopping counter: 3 out of 6
+Updating learning rate to 0.0005
+Epoch: 25 cost time: 98.79587531089783
+Epoch: 25, Steps: 285 | Train Loss: 0.184  vali_loss: 0.169   test_loss: 0.224 
+EarlyStopping counter: 4 out of 6
+Updating learning rate to 0.0005
+Epoch: 26 cost time: 98.84006643295288
+Epoch: 26, Steps: 285 | Train Loss: 0.182  vali_loss: 0.173   test_loss: 0.228 
+EarlyStopping counter: 5 out of 6
+Updating learning rate to 0.0005
+Epoch: 27 cost time: 99.34647965431213
+Epoch: 27, Steps: 285 | Train Loss: 0.181  vali_loss: 0.171   test_loss: 0.222 
+EarlyStopping counter: 6 out of 6
+Early stopping
+>>>>>>>testing : solar_AL_pl192_n_layers_3_d_model_512_dropout_0.5_pe_type_no_bs_128_lr_0.0005<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 10321
+loading model
+Model weights deleted.
+test shape: (10321, 192, 137) (10321, 192, 137)
+mse:  0.231  mae:  0.264

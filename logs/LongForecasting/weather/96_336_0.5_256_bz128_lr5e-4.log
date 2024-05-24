@@ -1,0 +1,89 @@
+Args in experiment:
+Namespace(batch_size=128, c_out=21, checkpoints='./checkpoints', d_model=256, data='custom', data_path='weather.csv', dec_in=21, des='Exp', devices='0,1,2,3', dropout=0.5, enc_in=21, features='M', freq='h', gpu=0, is_training=1, itr=1, kernel_size=25, label_len=48, learning_rate=0.0005, loss='mse', lradj='constant', model='Leddam', model_id='weather_96_336', n_layers=1, num_workers=0, patience=6, pe_type='sincos', pred_len=336, revin=True, root_path='dataset/weather/', seq_len=96, target='OT', task_name='long_term_forecast', train_epochs=100, use_amp=True, use_gpu=True, use_multi_gpu=False)
+Use GPU: cuda:0
+>>>>>>>start training : weather_pl336_n_layers_1_d_model_256_dropout_0.5_pe_type_sincos_bs_128_lr_0.0005>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 36456
+val 4935
+test 10204
+Epoch: 1 cost time: 18.003312587738037
+Epoch: 1, Steps: 284 | Train Loss: 0.605  vali_loss: 0.572   test_loss: 0.275 
+Validation loss decreased (inf --> 0.572458).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 2 cost time: 14.281026124954224
+Epoch: 2, Steps: 284 | Train Loss: 0.573  vali_loss: 0.562   test_loss: 0.272 
+Validation loss decreased (0.572458 --> 0.561956).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 3 cost time: 13.747474193572998
+Epoch: 3, Steps: 284 | Train Loss: 0.564  vali_loss: 0.555   test_loss: 0.269 
+Validation loss decreased (0.561956 --> 0.555437).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 4 cost time: 14.92980408668518
+Epoch: 4, Steps: 284 | Train Loss: 0.558  vali_loss: 0.557   test_loss: 0.270 
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 0.0005
+Epoch: 5 cost time: 15.191135168075562
+Epoch: 5, Steps: 284 | Train Loss: 0.554  vali_loss: 0.549   test_loss: 0.268 
+Validation loss decreased (0.555437 --> 0.549069).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 6 cost time: 15.816768884658813
+Epoch: 6, Steps: 284 | Train Loss: 0.550  vali_loss: 0.545   test_loss: 0.266 
+Validation loss decreased (0.549069 --> 0.545125).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 7 cost time: 17.162317037582397
+Epoch: 7, Steps: 284 | Train Loss: 0.547  vali_loss: 0.544   test_loss: 0.265 
+Validation loss decreased (0.545125 --> 0.544156).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 8 cost time: 15.652491331100464
+Epoch: 8, Steps: 284 | Train Loss: 0.542  vali_loss: 0.542   test_loss: 0.265 
+Validation loss decreased (0.544156 --> 0.541926).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 9 cost time: 15.949509143829346
+Epoch: 9, Steps: 284 | Train Loss: 0.539  vali_loss: 0.544   test_loss: 0.263 
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 0.0005
+Epoch: 10 cost time: 13.145947933197021
+Epoch: 10, Steps: 284 | Train Loss: 0.536  vali_loss: 0.546   test_loss: 0.265 
+EarlyStopping counter: 2 out of 6
+Updating learning rate to 0.0005
+Epoch: 11 cost time: 13.096091985702515
+Epoch: 11, Steps: 284 | Train Loss: 0.532  vali_loss: 0.544   test_loss: 0.263 
+EarlyStopping counter: 3 out of 6
+Updating learning rate to 0.0005
+Epoch: 12 cost time: 13.844304323196411
+Epoch: 12, Steps: 284 | Train Loss: 0.530  vali_loss: 0.544   test_loss: 0.262 
+EarlyStopping counter: 4 out of 6
+Updating learning rate to 0.0005
+Epoch: 13 cost time: 13.776622772216797
+Epoch: 13, Steps: 284 | Train Loss: 0.528  vali_loss: 0.539   test_loss: 0.262 
+Validation loss decreased (0.541926 --> 0.539170).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 14 cost time: 14.121412992477417
+Epoch: 14, Steps: 284 | Train Loss: 0.525  vali_loss: 0.545   test_loss: 0.264 
+EarlyStopping counter: 1 out of 6
+Updating learning rate to 0.0005
+Epoch: 15 cost time: 12.610535144805908
+Epoch: 15, Steps: 284 | Train Loss: 0.521  vali_loss: 0.543   test_loss: 0.262 
+EarlyStopping counter: 2 out of 6
+Updating learning rate to 0.0005
+Epoch: 16 cost time: 13.136799573898315
+Epoch: 16, Steps: 284 | Train Loss: 0.519  vali_loss: 0.543   test_loss: 0.263 
+EarlyStopping counter: 3 out of 6
+Updating learning rate to 0.0005
+Epoch: 17 cost time: 13.234841585159302
+Epoch: 17, Steps: 284 | Train Loss: 0.518  vali_loss: 0.541   test_loss: 0.261 
+EarlyStopping counter: 4 out of 6
+Updating learning rate to 0.0005
+Epoch: 18 cost time: 14.597964525222778
+Epoch: 18, Steps: 284 | Train Loss: 0.516  vali_loss: 0.541   test_loss: 0.264 
+EarlyStopping counter: 5 out of 6
+Updating learning rate to 0.0005
+Epoch: 19 cost time: 13.820501327514648
+Epoch: 19, Steps: 284 | Train Loss: 0.514  vali_loss: 0.541   test_loss: 0.262 
+EarlyStopping counter: 6 out of 6
+Early stopping
+>>>>>>>testing : weather_pl336_n_layers_1_d_model_256_dropout_0.5_pe_type_sincos_bs_128_lr_0.0005<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 10204
+loading model
+Model weights deleted.
+test shape: (10204, 336, 21) (10204, 336, 21)
+mse:  0.262  mae:  0.291
