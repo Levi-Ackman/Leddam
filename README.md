@@ -26,7 +26,9 @@ url={https://openreview.net/forum?id=87CYNyCGOo}
 1. Install requirements. ```pip install -r requirements.txt```
 2. Download data. You can download the all datasets from [datasets](https://drive.google.com/u/0/uc?id=1NF7VEefXCmXuWNbnNe858WvQAkJ_7wuP&export=download). **All the datasets are well pre-processed** and can be used easily.
 3. Train the model. We provide the experiment scripts of all benchmarks under the folder `./scripts`. You can reproduce the experiment results by:
+   
 ```python run_script.py```
+
 to replicate the benchmark results of **Leddam** from the paper on the eight datasets. 
 
 Alternatively, you can use bash commands to individually run scripts in the 'scripts' folder from the command line to obtain results for individual datasets, take Traffic for example, you can use the below command line to obtain the result of **input-96-predict-96**:
