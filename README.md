@@ -12,9 +12,9 @@
 
 ```
 @inproceedings{
-anonymous2024revitalizing,
+yu2024revitalizing,
 title={Revitalizing Multivariate Time Series Forecasting: Learnable Decomposition with Inter-Series Dependencies and Intra-Series Variations Modeling},
-author={Anonymous},
+author={Guoqi Yu and Jing Zou and Xiaowei Hu and Angelica I Aviles-Rivero and Jing Qin and Shujun Wang},
 booktitle={Forty-first International Conference on Machine Learning},
 year={2024},
 url={https://openreview.net/forum?id=87CYNyCGOo}
