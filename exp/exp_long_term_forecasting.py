@@ -140,9 +140,9 @@ class Exp_Long_Term_Forecast(Exp_Basic):
         if test:
             print('loading model')
             self.model.load_state_dict(torch.load(os.path.join(path, 'checkpoint.pth')))
-        if os.path.exists(os.path.join(os.path.join(path, 'checkpoint.pth'))):
-            os.remove(os.path.join(os.path.join(path, 'checkpoint.pth')))
-            print('Model weights deleted.')
+        # if os.path.exists(os.path.join(os.path.join(path, 'checkpoint.pth'))):
+        #     os.remove(os.path.join(os.path.join(path, 'checkpoint.pth')))
+        #     print('Model weights deleted.')
 
         head = f'./test_dict/{self.args.data_path[:-4]}/{self.args.seq_len} -> {self.args.pred_len}/'
         
